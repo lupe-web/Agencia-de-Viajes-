@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquete Turístico: Guatemala Inolvidable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Paquete Turístico: Guatemala Mágica</h1>
+        <p><strong>Explora la riqueza del Mundo Maya, volcanes majestuosos y ciudades coloniales.</strong></p>
+        <hr>
+    </header>
+    <main>
+        <section>
+           <h2>Sobre el Destino: Guatemala</h2>
+         <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/Lugares-para-tomarse-fotos-con-la-bandera-de-Guatemala.jpg" width="100%">
+            
+            <p>
+                Guatemala es un destino fascinante en el corazón de Centroamérica, reconocido mundialmente por su asombrosa biodiversidad, su herencia prehispánica viva y sus espectaculares paisajes naturales. Este paquete especial está diseñado para llevarte a los puntos más emblemáticos del país, combinando la mística de las antiguas ruinas mayas en la selva con la tranquilidad de sus lagos y el encanto de sus calles empedradas.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Lugares Turísticos que Visitarás</h2>
+            
+            <h3>1. Parque Nacional Tikal (Petén)</h3>
+            <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/tikal%20guatemala.webp" width="500px">
+            
+            <p>Una de las ciudades más grandes de la antigua civilización maya, escondida en medio de una reserva de biosfera tropical. Podrás admirar templos gigantescos que sobresalen de las copas de los árboles y escuchar el sonido de la fauna local.</p>
+            
+            <h3>2. Lago de Atitlán (Sololá)</h3>
+            <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/Lago%20de%20Atitl%C3%A1n%20(Solol%C3%A1)%20guatemala.jpg" width="500px">
+            
+            <p>Rodeado por tres imponentes volcanes, este lago es considerado uno de los más hermosos del mundo. Visitaremos los pueblos ribereños donde se conservan tradiciones ancestrales, artesanías coloridas y textiles únicos.</p>
+
+            <h3>3. Ciudad Colonial de Antigua Guatemala</h3>
+            <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/Ciudad%20Colonial%20de%20Antigua%20Guatemala.jfif" width="500px">
+            
+            <p>Declarada Patrimonio de la Humanidad, es una ciudad detenida en el tiempo con sus iglesias barrocas en ruinas, conventos históricos, calles de piedra y una vibrante oferta gastronómica y cultural.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Precios de los Boletos y Categorías</h2>
+            <p>Elige la experiencia que mejor se adapte a tu estilo de viaje. Contamos con dos opciones de servicio:</p>
+
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr bgcolor="#dddddd">
+                        <th>Beneficios Incluidos</th>
+                        <th>Boleto Turista</th>
+                        <th>Boleto VIP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Transporte</strong></td>
+                        <td>Autobús terrestre climatizado</td>
+                        <td>Vuelos internos de conexión rápida (Guatemala - Petén)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hospedaje</strong></td>
+                        <td>Hoteles categoría 3 estrellas</td>
+                        <td>Hoteles boutique e históricos 5 estrellas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alimentación</strong></td>
+                        <td>Desayunos incluidos</td>
+                        <td>Todos los desayunos, almuerzos y cenas gourmet</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Excursiones</strong></td>
+                        <td>Entradas a parques con guía grupal</td>
+                        <td>Guía privado exclusivo y acceso preferencial sin filas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Precio Total</strong></td>
+                        <td><strong>$890.00 USD</strong></td>
+                        <td><strong>$1,450.00 USD</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><em>*Nota: Precios por persona. Los impuestos de salida aeroportuaria ya están incluidos en la tarifa VIP.</em></p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Reserva tu Boleto a Guatemala</h2>
+            <p>Llena el formulario seleccionando tu tipo de boleto preferido y nos pondremos en contacto contigo.</p>
+            
+            <form action="#" method="POST">
+                <p>
+                    <label for="nombre">Nombre Completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="correo">Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                <p>
+                    <label for="fecha">Fecha del Viaje:</label><br>
+                    <input type="date" id="fecha" name="fecha" required>
+                </p>
+                <p>
+                    <label for="tipo_boleto">Categoría de Boleto:</label><br>
+                    <select id="tipo_boleto" name="tipo_boleto">
+                        <option value="turista">Boleto Turista ($890.00 USD)</option>
+                        <option value="vip">Boleto VIP ($1,450.00 USD)</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="cantidad">Número de Viajeros:</label><br>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                </p>
+                <p>
+                    <input type="submit" value="Confirmar Solicitud de Reserva">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Agencia de Viajes Mundo Maya. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

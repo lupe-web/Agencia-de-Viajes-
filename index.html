@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes - Descubre Centroamérica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO DE LA PÁGINA -->
+    <header>
+        <h1>Descubre Centroamérica</h1>
+        <h2>Bienvenido a nuestra agencia de viajes</h2>
+        <p><strong>Tu puerta de entrada a los destinos más paradisíacos e históricos del istmo</strong></p>
+        
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <a href="index.html">Inicio / Cotización</a> | 
+            <a href="guatemala.html">Guatemala</a> | 
+            <a href="honduras.html">Honduras</a> | 
+            <a href="nicaragua.html">Nicaragua</a> | 
+            <a href="costarica.html">Costa Rica</a> | 
+            <a href="panama.html">Panamá</a> | 
+            <a href="belice.html">Belice</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- SECCIÓN DE INICIO -->
+    <main>
+        <section id="inicio">
+            <!-- Imagen Completa (Banner de bienvenida) -->
+            <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/Centroamerica-Default-Image.webp" width="1350px">
+           
+            <h3>Expertos en crear experiencias a tu medida en toda la región</h3>
+            
+            <!-- Descripción del Negocio -->
+            <p>
+                En <strong>Descubre Centroamérica</strong>, nos apasiona conectar a los viajeros con la riqueza cultural, la biodiversidad y la calidez humana de nuestra región. Somos una agencia especializada en diseñar itinerarios personalizados, excursiones de aventura, tours arqueológicos y escapadas relajantes a las mejores playas del Caribe y del Pacífico. Con años de experiencia en el sector, garantizamos asesoría las 24 horas, transporte seguro, guías certificados y los mejores convenios con hoteles locales para que tu única preocupación sea disfrutar del viaje.
+            </p>
+
+            <br>
+
+            <!-- FORMULARIO DE COTIZACIÓN -->
+            <fieldset>
+                <legend><strong>Cotiza tu Próximo Viaje</strong></legend>
+                <p>Completa este breve formulario y un asesor experto te enviará una propuesta personalizada de inmediato.</p>
+                
+                <form action="#" method="POST">
+                    <p>
+                        <label for="nombre">Nombre Completo:</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana García" required>
+                    </p>
+                    
+                    <p>
+                        <label for="correo">Correo Electrónico:</label><br>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </p>
+                    
+                    <p>
+                        <label for="destino">Destino de Centroamérica a cotizar:</label><br>
+                        <select id="destino" name="destino">
+                            <option value="guatemala">Guatemala</option>
+                            <option value="honduras">Honduras</option>
+                            <option value="nicaragua">Nicaragua</option>
+                            <option value="costarica">Costa Rica</option>
+                            <option value="panama">Panamá</option>
+                            <option value="belice">Belice</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="fecha">Fecha Estimada de Salida:</label><br>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+                    
+                    <p>
+                        <label for="pasajeros">Número de Pasajeros:</label><br>
+                        <input type="number" id="pasajeros" name="pasajeros" min="1" max="30" value="1" required>
+                    </p>
+                    
+                    <p>
+                        <label for="comentarios">Peticiones especiales (Hoteles, tours específicos, etc.):</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Ej. Me interesa el tour de snorkel, necesito hotel con desayuno incluido..."></textarea>
+                    </p>
+                    
+                    <p>
+                        <input type="submit" value="Enviar Solicitud">
+                        <input type="reset" value="Limpiar Formulario">
+                    </p>
+                </form>
+            </fieldset>
+        </section>
+
+        <hr>
+
+        <!-- ESPACIOS PARA LOS DESTINOS (Estructurados listos para agregar contenido específico) -->
+        <section id="guatemala">
+            <h2>Paquetes a Guatemala</h2>
+            <p>Próximamente encontrarás aquí los mejores tours hacia Tikal, Antigua Guatemala y el Lago de Atitlán.</p>
+        </section>
+
+        <hr>
+
+        <section id="honduras">
+            <h2>Paquetes a Honduras</h2>
+            <p>Próximamente encontrarás aquí los mejores tours hacia Roatán, Copán Ruinas y Pico Bonito.</p>
+        </section>
+
+        <hr>
+
+        <section id="nicaragua">
+            <h2>Paquetes a Nicaragua</h2>
+            <p>Próximamente encontrarás aquí los mejores tours hacia Granada, la Isla de Ometepe y San Juan del Sur.</p>
+        </section>
+
+        <hr>
+
+        <section id="costarica">
+            <h2>Paquetes a Costa Rica</h2>
+            <p>Próximamente encontrarás aquí los mejores tours hacia el Volcán Arenal, Manuel Antonio y Monteverde.</p>
+        </section>
+
+        <hr>
+
+        <section id="panama">
+            <h2>Paquetes a Panamá</h2>
+            <p>Próximamente encontrarás aquí los mejores tours hacia el Canal de Panamá, Bocas del Toro y el Casco Antiguo.</p>
+        </section>
+
+        <hr>
+
+        <section id="belice">
+            <h2>Paquetes a Belice</h2>
+            <p>Próximamente encontrarás aquí los mejores tours hacia el Gran Agujero Azul, Cayo Caulker y San Pedro.</p>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+         <p>&copy; Hecho por a YO 2026 Descubre Centroamérica. Todos los derechos reservados.</p>
+       
+         </footer>
+
+</body>
+</html>

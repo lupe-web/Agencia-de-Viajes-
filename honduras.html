@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquete Turístico: Honduras Total</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Paquete Turístico: Honduras Total</h1>
+        <p><strong>Explora la riqueza del mundo maya y el paraíso caribeño en un solo viaje</strong></p>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+             <h2>Sobre el Destino: Honduras</h2>
+            <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/bandera%20de%20honduras.jpg" width="100%">
+           
+            <p>
+                Honduras es un destino fascinante en Centroamérica que lo tiene todo: una historia ancestral asombrosa, selvas tropicales llenas de biodiversidad y algunas de las mejores playas del mundo. Este paquete está diseñado para ofrecerte una experiencia completa, permitiéndote elegir el nivel de comodidad que prefieras para tus traslados y estancias.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Lugares Turísticos que Visitarás</h2>
+            
+            <h3>1. Islas de la Bahía (Roatán)</h3>
+            <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/Islas%20de%20la%20Bah%C3%ADa%20(Roat%C3%A1n)%20honduras.webp" width="500px">
+            <p>Un paraíso caribeño rodeado por la segunda barrera de arrecifes de coral más grande del mundo. Sus aguas cristalinas de color turquesa son perfectas para el buceo, el snorkel o simplemente para descansar bajo las palmeras en West Bay.</p>
+            
+            <h3>2. Parque Arqueológico Copán Ruinas</h3>
+            <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/Parque%20Arqueol%C3%B3gico%20Cop%C3%A1n%20Ruinas%20honduras.jpg" width="500px">
+            <p>Considerado el centro cultural e histórico más artístico de la civilización maya. Caminarás entre imponentes estelas, templos antiguos y la famosa Escalinata de los Jeroglíficos, rodeado de guacamayas rojas libres en su hábitat natural.</p>
+            
+            <h3>3. Parque Nacional Pico Bonito</h3>
+            <img src="file:///C:/Users/MINEDUCYT/Pictures/Saved%20Pictures/Parque%20Nacional%20Pico%20Bonito%20honduras.webp" width="500px">
+            <p>Una enorme reserva natural con montañas cubiertas de selva tropical y ríos cristalinos en La Ceiba. Ideal para realizar senderismo ecológico, puentes colgantes, avistamiento de aves y rafting de aventura.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Opciones de Boletos y Precios</h2>
+            <p>Elige la modalidad que mejor se adapte a tu estilo de viaje. Los precios son por persona con todo incluido:</p>
+
+            <table border="1" cellpadding="12" cellspacing="0">
+                <thead>
+                    <tr bgcolor="#dddddd">
+                        <th>Beneficios Incluidos</th>
+                        <th>Boleto Turista</th>
+                        <th>Boleto VIP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hospedaje</strong></td>
+                        <td>Hoteles categoría estándar de 3 estrellas</td>
+                        <td>Resorts de lujo 5 estrellas frente al mar</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Transporte Interno</strong></td>
+                        <td>Autobús climatizado y Ferry estándar</td>
+                        <td>Vuelos internos y asientos en cabina VIP de Ferry</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alimentación</strong></td>
+                        <td>Desayunos diarios incluidos</td>
+                        <td>Plan todo incluido (Desayunos, almuerzos, cenas y bebidas)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Excursiones</strong></td>
+                        <td>Entradas a parques con guía grupal</td>
+                        <td>Entradas prioritarias con guía privado y equipo de snorkel premium</td>
+                    </tr>
+                    <tr bgcolor="#f9f9f9">
+                        <td><strong>PRECIO TOTAL</strong></td>
+                        <td><strong>$890.00 USD</strong></td>
+                        <td><strong>$1,450.00 USD</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><em>*Nota: Los vuelos internacionales desde tu país de origen no están incluidos en ninguna de las tarifas.</em></p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Reserva tu Boleto</h2>
+            <p>Completa tus datos para asegurar tus lugares en la modalidad de tu preferencia.</p>
+            
+            <form action="#" method="POST">
+                <p>
+                    <label for="nombre">Nombre Completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                
+                <p>
+                    <label for="correo">Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                
+                <p>
+                    <label for="tipo_boleto">Selecciona tu tipo de boleto:</label><br>
+                    <input type="radio" id="turista" name="tipo_boleto" value="turista" checked>
+                    <label for="turista">Boleto Turista ($890.00 USD)</label><br>
+                    <input type="radio" id="vip" name="tipo_boleto" value="vip">
+                    <label for="vip">Boleto VIP ($1,450.00 USD)</label>
+                </p>
+                
+                <p>
+                    <label for="cantidad">Número de Viajeros:</label><br>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="15" value="1" required>
+                </p>
+                
+                <p>
+                    <label for="fecha">Fecha Estimada de Viaje:</label><br>
+                    <input type="date" id="fecha" name="fecha" required>
+                </p>
+                
+                <p>
+                    <input type="submit" value="Confirmar Solicitud de Reserva">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Agencia América Viajera. Descubre los tesoros de Centroamérica de forma segura.</p>
+    </footer>
+
+</body>
+</html>

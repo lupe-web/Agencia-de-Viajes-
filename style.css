@@ -1,0 +1,195 @@
+/* ==========================================================================
+   1. CONFIGURACIÓN GENERAL Y FUENTES (Estilo de Letras)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #111e38;
+    overflow-x: hidden;
+    opacity: 0;
+    /* Animación al acceder a la página: desvanecimiento y entrada suave */
+    animation: fadeInPage 1.5s ease-out forwards;
+}
+
+/* ==========================================================================
+   2. ANIMACIONES (Movimientos)
+   ========================================================================== */
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatTitle {
+    0% {
+        transform: translateY(0px) scale(1);
+        text-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.02);
+        text-shadow: 0 20px 30px rgba(212, 175, 55, 0.3);
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+        text-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+}
+
+@keyframes slideLine {
+    from { width: 0; }
+    to { width: 100px; }
+}
+
+/* ==========================================================================
+   3. ENCABEZADOS Y TÍTULOS (Sofisticación Elite)
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #173977 0%, #1c3154 100%);
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 4px solid #d4af37; /* Línea dorada */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Título Principal con movimiento continuo y elegante */
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    color: #d4af37; /* Oro */
+    margin-bottom: 15px;
+    display: inline-block;
+    animation: floatTitle 4s ease-in-out infinite;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #eaeaea;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Encabezados de secciones (H2, H3) */
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #057ff8;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Línea decorativa debajo de los H2 */
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #d4af37;
+    animation: slideLine 2s ease-out forwards;
+}
+
+/* ==========================================================================
+   4. TABLAS (Diseño de Primera Clase)
+   ========================================================================== */
+.table-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Para que los bordes redondeados funcionen */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #0b1528;
+    color: #d4af37;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 18px;
+    text-align: left;
+}
+
+td {
+    padding: 16px;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+/* Filas alternas para mejorar la lectura */
+tr:nth-child(even) {
+    background-color: #fcfdfd;
+}
+
+/* Efecto Hover inteligente en las filas */
+tr:hover td {
+    background-color: rgba(212, 175, 55, 0.08);
+    color: #183d8b;
+    transform: scale(1.002);
+    padding-left: 22px; /* Ligero desplazamiento premium al pasar el mouse */
+}
+
+/* ==========================================================================
+   5. BOTONES Y DETALLES ADICIONALES (Llamados a la acción)
+   ========================================================================== */
+.btn-gold {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #b1b40b;
+    text-decoration: #c4c70c;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #d4af37;
+    color: #152788;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+}
